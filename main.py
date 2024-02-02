@@ -1,16 +1,30 @@
-# This is a sample Python script.
+# ramdagadam ćuje se kada ti ga dam
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+from LoginMethod import LoginMethod
+from ManualSignInMethod import ManualSignInMethod
+from Strings import Strings
+from TimeSyncService import TimeSyncService
+
+userData = GetUserData()
+timeSyncService = TimeSyncService()
+
+print(Strings.WarmupMessage)
+print("\n")
+
+timeSyncService.syncTime()
+
+if userData.loginMethod == LoginMethod.AUTOMATIC:
+    # not yet implemented
+    pass
+elif userData.loginMethod == LoginMethod.MANUAL:
+    manualSignInMethod = ManualSignInMethod()
+    manualSignInMethod.startManualProcedure()
 
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
 
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+
+
+
+
