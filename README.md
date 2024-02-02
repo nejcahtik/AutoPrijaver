@@ -1,5 +1,10 @@
 # Program za avtomatsko prijavljanje na obštudijske dejavnosti UL
 
+## Kako inštalirat
+
+Če mi zaupaš, lahko zloudaš /dist mapo, v kateri se nahaja main.exe file, ki ga zaženeš. To bi mogl delat, če ne mi piši
+Če mi ne zaupaš, lahko zloudaš celo kodo, jo preveriš, da to ni virus, si na računalnik, če še nimaš, inštaliraš python, in potem s pythonom zaženeš main.py
+
 
 
 Torej ko zalaufaš program se ti bo odpru browser na login spletni strani popr.uni-lj.si
