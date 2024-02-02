@@ -14,7 +14,6 @@ class ManualSignInMethod:
 
 
     def tryToRegister(self, nOfRetries):
-        print("noOfRetries = " + str(nOfRetries))
 
         try:
             print(Strings.TryingToFindBookButton)
@@ -76,7 +75,7 @@ class ManualSignInMethod:
         self.driver.get(loginUrl)
 
 
-    def waitFor6am(self):
+    def waitTill6am(self):
 
         timeToSleep = 300
 
@@ -87,17 +86,15 @@ class ManualSignInMethod:
             self.refreshBrowser()
             t.sleep(timeToSleep)
 
-            if currentTMinusHours != self.getTMinusHours():
+            if int(currentTMinusHours) != int(self.getTMinusHours()):
                 currentTMinusHours = self.getTMinusHours()
 
                 print(Strings.CheckingTMinusHours + str(self.getTMinusHours()))
-                print("\n")
 
-                if self.getTMinusHours() == 5:
+                if int(self.getTMinusHours()) == 5:
                     print(Strings.ItsBoring)
-                    print("\n")
 
-                if self.getTMinusHours() == 4:
+                if int(self.getTMinusHours()) == 4:
                     print(Strings.Severina)
 
 
@@ -170,9 +167,9 @@ class ManualSignInMethod:
 
         currentTMinusHours = self.getTMinusHours()
 
-        print(Strings.TMinusHoursNote + str(currentTMinusHours))
+        print(Strings.Goodnight)
 
-        self.waitFor6am()
+        self.waitTill6am()
         # self.tryToRegister(2)
 
 
