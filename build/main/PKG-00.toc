@@ -1,0 +1,66 @@
+('C:\\Users\\My Master\\PycharmProjects\\Auto_Prijaver\\build\\main\\main.pkg',
+ {'BINARY': True,
+  'DATA': True,
+  'EXECUTABLE': True,
+  'EXTENSION': True,
+  'PYMODULE': True,
+  'PYSOURCE': True,
+  'PYZ': False,
+  'SPLASH': True,
+  'SYMLINK': False},
+ [('pyi-contents-directory _internal', '', 'OPTION'),
+  ('PYZ-00.pyz',
+   'C:\\Users\\My '
+   'Master\\PycharmProjects\\Auto_Prijaver\\build\\main\\PYZ-00.pyz',
+   'PYZ'),
+  ('struct',
+   'C:\\Users\\My '
+   'Master\\PycharmProjects\\Auto_Prijaver\\build\\main\\localpycs\\struct.pyc',
+   'PYMODULE'),
+  ('pyimod01_archive',
+   'C:\\Users\\My '
+   'Master\\PycharmProjects\\Auto_Prijaver\\build\\main\\localpycs\\pyimod01_archive.pyc',
+   'PYMODULE'),
+  ('pyimod02_importers',
+   'C:\\Users\\My '
+   'Master\\PycharmProjects\\Auto_Prijaver\\build\\main\\localpycs\\pyimod02_importers.pyc',
+   'PYMODULE'),
+  ('pyimod03_ctypes',
+   'C:\\Users\\My '
+   'Master\\PycharmProjects\\Auto_Prijaver\\build\\main\\localpycs\\pyimod03_ctypes.pyc',
+   'PYMODULE'),
+  ('pyimod04_pywin32',
+   'C:\\Users\\My '
+   'Master\\PycharmProjects\\Auto_Prijaver\\build\\main\\localpycs\\pyimod04_pywin32.pyc',
+   'PYMODULE'),
+  ('pyiboot01_bootstrap',
+   'c:\\users\\my '
+   'master\\documents\\auto_prijaver\\lib\\site-packages\\PyInstaller\\loader\\pyiboot01_bootstrap.py',
+   'PYSOURCE'),
+  ('pyi_rth_pkgutil',
+   'C:\\Users\\My '
+   'Master\\Documents\\Auto_Prijaver\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks\\pyi_rth_pkgutil.py',
+   'PYSOURCE'),
+  ('pyi_rth_multiprocessing',
+   'C:\\Users\\My '
+   'Master\\Documents\\Auto_Prijaver\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks\\pyi_rth_multiprocessing.py',
+   'PYSOURCE'),
+  ('pyi_rth_inspect',
+   'C:\\Users\\My '
+   'Master\\Documents\\Auto_Prijaver\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks\\pyi_rth_inspect.py',
+   'PYSOURCE'),
+  ('pyi_rth_pkgres',
+   'C:\\Users\\My '
+   'Master\\Documents\\Auto_Prijaver\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks\\pyi_rth_pkgres.py',
+   'PYSOURCE'),
+  ('main',
+   'C:\\Users\\My Master\\PycharmProjects\\Auto_Prijaver\\main.py',
+   'PYSOURCE')],
+ 'python39.dll',
+ True,
+ False,
+ False,
+ [],
+ None,
+ None,
+ None)
