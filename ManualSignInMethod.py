@@ -10,30 +10,41 @@ from selenium.webdriver.support import expected_conditions as EC
 class ManualSignInMethod:
 
     timeSyncService = TimeSyncService()
-    PATH = "C:\Program Files (x86)\chromedriver.exe"
     driver = webdriver.Chrome()
-    numberOfRetries = 10
 
 
     def tryToRegister(self, nOfRetries):
+        print("noOfRetries = " + str(nOfRetries))
 
         try:
             print(Strings.TryingToFindBookButton)
-            print("\n")
 
-            button = self.driver.find_element(By.CSS_SELECTOR, ".btn.btn-primary.btn-sm")
-            button.click()
-
-            maxWaitTime = 10
+            maxWaitTime = 5
 
             WebDriverWait(self.driver, maxWaitTime).until(
-                EC.presence_of_element_located((By.CSS_SELECTOR, "span.message"))
+                EC.presence_of_element_located((By.XPATH, "//button[text()=' Book ']"))
             )
 
-            button = self.driver.find_element(By.XPATH, "//button[text()='YES']")
+            maxWaitTime = 5
+
+            WebDriverWait(self.driver, 10).until(
+                EC.element_to_be_clickable((By.XPATH, "//button[text()=' Book ']"))
+            )
+
+            button = self.driver.find_element(By.XPATH, "//button[text()=' Book ']")
+
+            self.driver.execute_script("arguments[0].scrollIntoView(true);", button)
+
+            self.driver.execute_script("arguments[0].click();", button)
+
+            button = WebDriverWait(self.driver, maxWaitTime).until(
+                EC.presence_of_element_located((By.XPATH, "//button[text()='Yes']"))
+            )
             button.click()
 
-            button = self.driver.find_element(By.ID, "14362")
+            button = WebDriverWait(self.driver, maxWaitTime).until(
+                EC.presence_of_element_located((By.NAME, "_eventId_book"))
+            )
             button.click()
 
             reservationConfirmedText = "You already have a booking for this event. If there is another slot you wish to " \
@@ -44,14 +55,12 @@ class ManualSignInMethod:
             )
 
             print(Strings.ReservationConfirmed)
-            print("\n")
             print(Strings.Enjoy)
-            print("\n")
             print(Strings.Goodmorning)
         except Exception as e:
             print(Strings.FuckIFailed)
-            print("\n")
-            if(nOfRetries > 0):
+
+            if nOfRetries > 0:
                 print(Strings.Retrying)
                 self.tryToRegister(nOfRetries - 1)
             else:
@@ -81,7 +90,7 @@ class ManualSignInMethod:
             if currentTMinusHours != self.getTMinusHours():
                 currentTMinusHours = self.getTMinusHours()
 
-                print(Strings.CheckingTMinusNote + str(self.getTMinusHours()))
+                print(Strings.CheckingTMinusHours + str(self.getTMinusHours()))
                 print("\n")
 
                 if self.getTMinusHours() == 5:
@@ -90,7 +99,6 @@ class ManualSignInMethod:
 
                 if self.getTMinusHours() == 4:
                     print(Strings.Severina)
-                    print("\n")
 
 
         currentTMinusMinutes = self.getTMinusMinutes()
@@ -101,8 +109,7 @@ class ManualSignInMethod:
 
             if self.getTMinusMinutes() - currentTMinusMinutes > 15:
                 currentTMinusMinutes = self.getTMinusMinutes()
-                print(Strings.CheckingTMinusNote + self.getTMinusMinutes())
-                print("\n")
+                print(Strings.CheckingTMinusMinutes + str(self.getTMinusMinutes()))
 
         print(Strings.Last15Minutes)
 
@@ -113,13 +120,10 @@ class ManualSignInMethod:
 
             if self.getTMinusMinutes() - currentTMinusMinutes > 5:
                 currentTMinusMinutes = self.getTMinusMinutes()
-                print(Strings.CheckingTMinusNote + self.getTMinusMinutes())
-                print("\n")
+                print(Strings.CheckingTMinusMinutes + str(self.getTMinusMinutes()))
 
         print(Strings.Last5Minutes)
-        print("\n")
         print(Strings.RecheckingTimeAndInternet)
-        print("\n")
 
         self.timeSyncService.syncTime()
 
@@ -129,12 +133,9 @@ class ManualSignInMethod:
             self.refreshBrowser()
             t.sleep(timeToSleep)
 
-            print(Strings.CheckingTMinusNote + self.getTMinusMinutes())
-            print("\n")
+            print(Strings.CheckingTMinusMinutes + str(self.getTMinusMinutes()))
 
-        print(Strings.NotALotLeft + self.getTMinusSeconds() + Strings.Seconds)
-        print("\n")
-
+        print(Strings.NotALotLeft + str(self.getTMinusSeconds()) + Strings.Seconds)
 
         while self.getTMinusSeconds() > 15:
             t.sleep(1)
@@ -142,48 +143,37 @@ class ManualSignInMethod:
         self.refreshBrowser()
 
         print(Strings.AightBoysThisIsIt)
-        print("\n")
 
-        while self.getTMinusSeconds() < 2:
+        while self.getTMinusSeconds() > -2:
             pass
 
-        self.tryToRegister(self.numberOfRetries)
+        self.tryToRegister(10)
 
 
     def startManualProcedure(self):
 
         print(Strings.OpeningBrowserYouHave3MinutesToLogInAndGoToYourPage)
-        print("\n")
 
         while True:
 
             self.openSelenium()
 
             maxWaitTime = 180
-
-            beforeTime = self.timeSyncService.getCurrentExactDateTime()
-            welcomeText = "Dobrodošli! / Welcome!"
-            WebDriverWait(self.driver, maxWaitTime).until(
-                EC.presence_of_element_located((By.XPATH, f"//*[contains(text(), '{welcomeText}')]"))
-            )
-            afterTime = self.timeSyncService.getCurrentExactDateTime()
-
-            timeDiff = afterTime - beforeTime
-
-            if timeDiff.total_seconds() < 179:
+            try:
+                welcomeText = "Further information"
+                WebDriverWait(self.driver, maxWaitTime).until(
+                    EC.presence_of_element_located((By.XPATH, f"//*[contains(text(), '{welcomeText}')]"))
+                )
                 break
-            else:
-                self.driver.close()
+            except Exception:
                 print(Strings.YouFuckedUp)
-                print("\n")
-
 
         currentTMinusHours = self.getTMinusHours()
 
-        print(Strings.TMinusHoursNote + currentTMinusHours)
-        print("\n")
+        print(Strings.TMinusHoursNote + str(currentTMinusHours))
 
         self.waitFor6am()
+        # self.tryToRegister(2)
 
 
     def getTMinusHours(self):

@@ -1,12 +1,12 @@
 import ntplib
-from datetime import datetime, timedelta, time
+from datetime import datetime, timedelta, timezone
 import pytz
 
 from Strings import Strings
 
 
 class TimeSyncService:
-    timeDifference = 0
+    timeDifference = timedelta(days=0)
 
     def getLocalSystemDateTime(self):
         ljubljanaTimezone = pytz.timezone('Europe/Ljubljana')
@@ -14,9 +14,7 @@ class TimeSyncService:
 
     def syncTime(self):
 
-        print("\n")
         print(Strings.CheckingTimeDifferenceLabel)
-        print("\n")
 
         ntpServer = 'pool.ntp.org'
 
@@ -32,19 +30,22 @@ class TimeSyncService:
 
             ntpTimestamp = response.tx_time
             utcDatetime = datetime.utcfromtimestamp(ntpTimestamp)
+
             ljubljanaTimezoneOffset = timedelta(hours=1)
+            ljubljanaTimezone = timezone(ljubljanaTimezoneOffset)
+
             localDatetimeFromServer = utcDatetime + ljubljanaTimezoneOffset + timedelta(seconds=ping)
+            localDatetimeFromServer = localDatetimeFromServer.replace(tzinfo=ljubljanaTimezone)
 
             localSystemTime = self.getLocalSystemDateTime()
 
             self.timeDifference = localDatetimeFromServer - localSystemTime
 
-            print(Strings.TimeDifferenceLabel + self.timeDifference)
+            print(Strings.TimeDifferenceLabel + str(self.timeDifference))
 
         except Exception as e:
             print(Strings.CantSyncTimesPossibleProblemWithInternet)
-            print("\n")
-            print("Exception" + str(e))
+            print("Exception: " + str(e))
 
 
     def getCurrentExactDateTime(self):
@@ -54,19 +55,22 @@ class TimeSyncService:
     def get6amDateTime(self):
 
         currentTime = self.getCurrentExactDateTime().time()
+        wantedHour = 6
+        wantedMinute = 0
+        wantedSecond = 0
 
-        if currentTime.hour > 6:
+        if currentTime.hour > wantedHour:
             sixAmDateTime = self.getCurrentExactDateTime() + timedelta(days=1)
-            sixAmDateTime.replace(hour=6)
-            sixAmDateTime.replace(minute=0)
-            sixAmDateTime.replace(second=0)
-            sixAmDateTime.replace(microsecond=0)
+            sixAmDateTime = sixAmDateTime.replace(hour=wantedHour)
+            sixAmDateTime = sixAmDateTime.replace(minute=wantedMinute)
+            sixAmDateTime = sixAmDateTime.replace(second=wantedSecond)
+            sixAmDateTime = sixAmDateTime.replace(microsecond=0)
         else:
             sixAmDateTime = self.getCurrentExactDateTime() + timedelta(microseconds=1)
-            sixAmDateTime.replace(hour=6)
-            sixAmDateTime.replace(minute=0)
-            sixAmDateTime.replace(second=0)
-            sixAmDateTime.replace(microsecond=0)
+            sixAmDateTime = sixAmDateTime.replace(hour=wantedHour)
+            sixAmDateTime = sixAmDateTime.replace(minute=wantedMinute)
+            sixAmDateTime = sixAmDateTime.replace(second=wantedSecond)
+            sixAmDateTime = sixAmDateTime.replace(microsecond=0)
 
         return sixAmDateTime
 

@@ -10,8 +10,9 @@ class Strings:
                                     "se hočeš prjavt. Maš 3 minute časa"
     YouFuckedUp = "Pizda si glup, dj ti še enkrat odprem. Maš 3 minute."
     Goodnight = "Nč, toj to care, mam to, ti pa pejt spat, lahko noč"
-    TMinusHoursNote = "Evo tok časa je še do 6 zjutri: "
-    CheckingTMinusNote = "Še tok časa do šestih zjutri: "
+    TMinusHoursNote = "Evo tok ur je še do 6 zjutri: "
+    CheckingTMinusHours = "Še tok ur do šestih zjutri: "
+    CheckingTMinusMinutes = "Še tok minut do šestih zjutri: "
     ItsBoring = "Pizda dougčas mi je"
     Severina = "Dj da eno zasviram, Ovo će biti dobra noc predosjecaaaaaaaaaaan. Tvoje " \
                "su oci boje ranog proljecaaa. Nocni klub i svi smo tu na noge svi sad " \
