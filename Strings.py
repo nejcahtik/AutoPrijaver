@@ -3,6 +3,12 @@ class Strings:
 
     WarmupMessage = "Ke si legenda!!! Evo js ti bom zrihtau da boš jutr lahko šou na " \
                     "delavnico, ti pa se umes naspi"
+    AskForTimeslot = "Vale, dej mi najprej sam povej na ker termin bi šou. Sam napiš cifro od 1 do tok kokr je " \
+                     "terminov za to dejavnost, kjer 1 pomen najbl zgodn termin oz. un k je najbl zgori napisan " \
+                     "na spletni strani"
+    EnterNumber = "Vnesi številko: "
+    YouFuckedUpEnteringNumber = "Pa jebemti, unesi ŠTEVILKO, ki je med 1 in tolk kokr je terminov za to dejavnost"
+    Deal = "Zmenjeno."
     OpeningBrowserYouHave3MinutesToLogInAndGoToYourPage = "Okej js ti bom zdele odpru " \
                                     "browser, ti se morš pa prjavt " \
                                     "u popr s svojim mejlom pa geslom in it na uno spletno " \
