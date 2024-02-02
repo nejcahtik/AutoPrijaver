@@ -19,4 +19,3 @@ Primer nepomembnga errorja:
 
 POMEMBNO!!!
 Naštimi si komp tko da se ti ne bo ugasnu ponoč oz. šou u sleep mode oz. izklopu interneta al pa kej podobnega.
-POMEMBNO!!!
