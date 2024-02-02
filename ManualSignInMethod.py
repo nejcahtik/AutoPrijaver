@@ -165,7 +165,6 @@ class ManualSignInMethod:
             except Exception:
                 print(Strings.YouFuckedUp)
 
-        currentTMinusHours = self.getTMinusHours()
 
         print(Strings.Goodnight)
 
