@@ -5,7 +5,6 @@ from ManualSignInMethod import ManualSignInMethod
 from Strings import Strings
 from TimeSyncService import TimeSyncService
 
-userData = GetUserData()
 timeSyncService = TimeSyncService()
 
 print(Strings.WarmupMessage)
