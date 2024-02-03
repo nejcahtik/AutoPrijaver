@@ -21,4 +21,5 @@ Primer nepomembnga errorja:
 [20296:18672:0202/223010.004:ERROR:interface_endpoint_client.cc(702)] Message 1 rejected by interface blink.mojom.WidgetHost
 
 POMEMBNO!!!
-Naštimi si komp tko da se ti ne bo ugasnu ponoč oz. šou u sleep mode oz. izklopu interneta al pa kej podobnega.
+- Naštimi si komp tko da se ti ne bo ugasnu ponoč oz. šou u sleep mode oz. izklopu interneta al pa kej podobnega.
+- Kkšne dejavnosti (plezanje ni med njimi) majo tko, da po tem k klikneš na gumb 'Book', morš še odgovorit na neki uprašanj oz. izpolnt anketo, predn lah klikneš na 'Submit' za potrditeev prijave. U tem primeru program ne bo delau
