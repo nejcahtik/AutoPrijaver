@@ -24,4 +24,4 @@ Primer nepomembnga errorja:
 
 POMEMBNO!!!
 - Naštimi si komp tko da se ti ne bo ugasnu ponoč oz. šou u sleep mode oz. izklopu interneta al pa kej podobnega.
-- Kkšne dejavnosti (plezanje ni med njimi) majo tko, da po tem k klikneš na gumb 'Book', morš še odgovorit na neki uprašanj oz. izpolnt anketo, predn lah klikneš na 'Submit' za potrditeev prijave. U tem primeru program ne bo delau
+- Kkšne dejavnosti (plezanje ni med njimi) majo tko, da po tem k klikneš na gumb 'Book', morš še odgovorit na neki uprašanj oz. izpolnt anketo, predn lah klikneš na 'Submit' za potrditev prijave. U tem primeru program ne bo delau
