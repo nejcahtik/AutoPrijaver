@@ -2,9 +2,15 @@
 
 ## Kako inštalirat
 
+### Windows
+
 Če mi zaupaš, lahko zloudaš /dist mapo, v kateri se nahaja main.exe file, ki ga zaženeš. To bi mogl delat, če ne, mi piši
 
 Če mi ne zaupaš, lahko zloudaš celo kodo, jo preveriš, da to ni virus, si na računalnik, če še nimaš, inštaliraš python, in potem s pythonom zaženeš main.py
+
+### Ostali OS
+
+Tega se mi še ni dal narest
 
 ## Kako program dela
 
