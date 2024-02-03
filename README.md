@@ -15,7 +15,7 @@ Pol bo program probau dobit točn čas iz interneta, zato da preveri kok ti na k
 Pol se ti bo odpru browser na login spletni strani popr.uni-lj.si.
 Ko se naloži spletna stran maš 3 minute časa, da se prijaviš v popr, klikneš na Search -> Events, greš na uno dejavnost, na katero se hočeš prjavt in klikneš nanjo, tko da se ti odpre spletna stran, na kateri se bo ob 6h zjutri pojavu modr gumb 'Book', na katerga se klikne za prijavo na dejavnost
 
-Ko to nardiš, pustiš browser pržgan in greš lahk spat. Program bo umes usake 5 min avtomatsko osvežiu spletno stran, zato da te ne odjavi (ta interval mejbi lah tud podalšam, ker ne vem po kolkem času te popr avtomatsko odjavi) in ob 2 sekunde čez 6h, če bo use šlo po planu,
+Ko to nardiš, pustiš browser pržgan in greš spat. Program bo umes usake 5 min avtomatsko osvežiu spletno stran, zato da te ne odjavi (ta interval mejbi lah tud podalšam, ker ne vem po kolkem času te popr avtomatsko odjavi) in ob 2 sekunde čez 6h, če bo use šlo po planu,
 bo avtomatsko refreshau stran, kliknu na gumb 'Book' in potrdiu prijavo, tko da ko se zbudiš boš že prjavlen.
 
 Če ti na konzoli piše neke nepomembne errorje, jih ignoriri. Pojma nimam, kaj so te errorji, ampak men kljub temu use deluje.
