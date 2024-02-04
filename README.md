@@ -16,7 +16,7 @@ Tega se mi še ni dal narest
 
 Torej ko zalaufaš program te bo najprej uprašau, na kater termin za izbrano dejavnost bi se rd prjavu. Vneseš številko od 1 (za prijavo na prvi oz. najbl zgodn termin oz. termin k je lociran prvi v seznamu terminov na popru na spletni strani od te dejavnosti) do tolk kokr je terminov. Npr. za plezanje uneseš številko '1' za termin k je ob 19:30 in '2' za termin k je ob 21h.
 
-Pol bo program probau dobit točn čas iz interneta, zato da preveri kok ti na kompu zaostaja ura in če ti dela internet povezava. V primeru, da bo uspešn, se bo na terminalu izpisal, kolk zaostaja tvoj čas u primerjavi z dobljenim časom iz serverja. Ponavad je ta številka med 0 in 2 sekundi. Preveri, če je ta številka možna (npr. da program ne izpiše, da ti ura zaostaja za 20 ur, čeprou zgleda točna). Če ni možna, probi še enkrat zalaufat program.
+Pol bo program probau dobit točn čas iz interneta, zato da preveri kok ti na kompu zaostaja ura in če ti dela internet povezava. V primeru, da bo uspešn, se bo na terminalu izpisal, kolk zaostaja tvoj čas u primerjavi z dobljenim časom iz serverja.
 
 Pol se ti bo odpru browser na login spletni strani popr.uni-lj.si.
 Ko se naloži spletna stran maš 3 minute časa, da se prijaviš v popr, klikneš na Search -> Events, greš na uno dejavnost, na katero se hočeš prjavt in klikneš nanjo, tko da se ti odpre spletna stran, na kateri se bo ob 6h zjutri pojavu modr gumb 'Book', na katerga se klikne za prijavo na dejavnost
