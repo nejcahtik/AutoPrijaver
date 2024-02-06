@@ -19,19 +19,22 @@ class ManualSignInMethod:
         try:
             print(Strings.TryingToFindBookButton)
 
-            maxWaitTime = 5
+            maxWaitTime = 15
 
             WebDriverWait(self.driver, maxWaitTime).until(
                 EC.presence_of_element_located((By.XPATH, "//button[text()=' Book ']"))
             )
 
-            maxWaitTime = 5
-
             WebDriverWait(self.driver, 10).until(
                 EC.element_to_be_clickable((By.XPATH, "//button[text()=' Book ']"))
             )
 
-            button = self.driver.find_elements(By.XPATH, "//button[text()=' Book ']")[self.timeSlot-1]
+            buttons = self.driver.find_elements(By.XPATH, "//button[text()=' Book ']")
+
+            if len(buttons) <= self.timeSlot:
+                self.timeSlot = len(buttons)
+
+            button = buttons[self.timeSlot - 1]
 
             self.driver.execute_script("arguments[0].scrollIntoView(true);", button)
 
@@ -60,6 +63,8 @@ class ManualSignInMethod:
         except Exception as e:
             print(Strings.FuckIFailed)
 
+            print(str(e))
+
             if nOfRetries > 0:
                 print(Strings.Retrying)
                 self.tryToRegister(nOfRetries - 1)
@@ -81,6 +86,8 @@ class ManualSignInMethod:
         timeToSleep = 300
 
         currentTMinusHours = self.getTMinusHours()
+
+        print(Strings.CheckingTMinusHours + str(self.getTMinusHours()))
 
         while self.getTMinusHours() > 1:
 

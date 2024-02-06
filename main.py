@@ -5,7 +5,6 @@ from TimeSyncService import TimeSyncService
 
 timeSyncService = TimeSyncService()
 
-print("\n")
 print(Strings.WarmupMessage)
 
 print(Strings.AskForTimeslot)
