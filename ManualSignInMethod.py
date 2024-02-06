@@ -10,7 +10,7 @@ from selenium.webdriver.support import expected_conditions as EC
 class ManualSignInMethod:
 
     timeSyncService = TimeSyncService()
-    driver = webdriver.Chrome()
+    driver = webdriver.Edge()
     timeSlot = -1
 
 
