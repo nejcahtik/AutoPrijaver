@@ -10,7 +10,7 @@ from selenium.webdriver.support import expected_conditions as EC
 class ManualSignInMethod:
 
     timeSyncService = TimeSyncService()
-    driver = webdriver.Edge()
+    driver = webdriver.Chrome()
     timeSlot = -1
 
 
@@ -67,6 +67,7 @@ class ManualSignInMethod:
 
             if nOfRetries > 0:
                 print(Strings.Retrying)
+                self.refreshBrowser()
                 self.tryToRegister(nOfRetries - 1)
             else:
                 print(Strings.IGiveUp)
@@ -149,7 +150,7 @@ class ManualSignInMethod:
 
         print(Strings.AightBoysThisIsIt)
 
-        while self.getTMinusSeconds() > -2:
+        while self.getTMinusSeconds() < -2:
             pass
 
         self.tryToRegister(10)
