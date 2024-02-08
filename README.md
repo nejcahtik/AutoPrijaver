@@ -10,7 +10,7 @@
 
 ### Ostali OS
 
-Tega se mi še ni dal narest
+Še ni podprto
 
 ## Kako program dela
 
