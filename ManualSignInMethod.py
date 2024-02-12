@@ -19,7 +19,7 @@ class ManualSignInMethod:
         try:
             print(Strings.TryingToFindBookButton)
 
-            maxWaitTime = 15
+            maxWaitTime = 10
 
             WebDriverWait(self.driver, maxWaitTime).until(
                 EC.presence_of_element_located((By.XPATH, "//button[text()=' Book ']"))
