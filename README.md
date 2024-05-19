@@ -8,6 +8,8 @@
 
 Če mi ne zaupaš, lahko zloudaš celo kodo, jo preveriš, da to ni virus, si na računalnik, če še nimaš, inštaliraš python, in potem s pythonom zaženeš main.py
 
+Morš met inštaliran brskalnik Chrome.
+
 ### Ostali OS
 
 Še ni podprto
