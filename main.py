@@ -7,19 +7,20 @@ timeSyncService = TimeSyncService()
 
 print(Strings.WarmupMessage)
 
-print(Strings.AskForTimeslot)
+with open('input.txt', 'r', encoding='utf-8') as file:
+    timeSlot = file.readlines()
 
-while True:
-    timeSlotStr = input(Strings.EnterNumber)
-
-    try:
-        timeSlot = int(timeSlotStr)
-
-        if timeSlot > 0:
-            break
-    except Exception:
-        pass
-    print(Strings.YouFuckedUpEnteringNumber)
+# while True:
+#     timeSlotStr = input(Strings.EnterNumber)
+#
+#     try:
+#         timeSlot = int(timeSlotStr)
+#
+#         if timeSlot > 0:
+#             break
+#     except Exception:
+#         pass
+#     print(Strings.YouFuckedUpEnteringNumber)
 
 print(Strings.Deal)
 print("\n")

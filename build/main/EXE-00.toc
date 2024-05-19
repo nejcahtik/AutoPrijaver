@@ -82,7 +82,7 @@
  [],
  False,
  False,
- 1707757102,
+ 1716145524,
  [('run.exe',
    'c:\\users\\my '
    'master\\documents\\auto_prijaver\\lib\\site-packages\\PyInstaller\\bootloader\\Windows-64bit-intel\\run.exe',

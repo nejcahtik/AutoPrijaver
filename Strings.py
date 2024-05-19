@@ -1,36 +1,36 @@
 
 class Strings:
 
-    WarmupMessage = "Ke si legenda!!! Evo js ti bom zrihtau da boš jutr lahko šou na " \
+    WarmupMessage = "Ke si legenda!!! Evo js ti bom zrihtau da bos jutr lahko sou na " \
                     "delavnico, ti pa se umes naspi"
-    AskForTimeslot = "Vale, dej mi najprej sam povej na ker termin bi šou. Sam napiš cifro od 1 do tok kokr je " \
+    AskForTimeslot = "Vale, dej mi najprej sam povej na ker termin bi sou. Sam napis cifro od 1 do tok kokr je " \
                      "terminov za to dejavnost, kjer 1 pomen najbl zgodn termin oz. un k je najbl zgori napisan " \
                      "na spletni strani"
-    EnterNumber = "Vnesi številko: "
-    YouFuckedUpEnteringNumber = "Pa jebemti, unesi ŠTEVILKO, ki je med 1 in tolk kokr je terminov za to dejavnost"
+    EnterNumber = "Vnesi stevilko: "
+    YouFuckedUpEnteringNumber = "Pa jebemti, unesi STEVILKO, ki je med 1 in tolk kokr je terminov za to dejavnost"
     Deal = "Zmenjeno."
     OpeningBrowserYouHave3MinutesToLogInAndGoToYourPage = "Okej js ti bom zdele odpru " \
-                                    "browser, ti se morš pa prjavt " \
+                                    "browser, ti se mors pa prjavt " \
                                     "u popr s svojim mejlom pa geslom in it na uno spletno " \
-                                    "stran, kjer piše 'book' za tisto dejavnost, na katero " \
-                                    "se hočeš prjavt. Maš 3 minute časa"
-    YouFuckedUp = "Pizda si glup, dj ti še enkrat odprem. Maš 3 minute."
-    Goodnight = "Nč, toj to care, mam to, ti pa pejt spat, lahko noč"
-    TMinusHoursNote = "Evo tok ur je še do 6 zjutri: "
-    CheckingTMinusHours = "Še tok ur do šestih zjutri: "
-    CheckingTMinusMinutes = "Še tok minut do šestih zjutri: "
-    ItsBoring = "Pizda dougčas mi je"
-    Severina = "Dj da eno zasviram, Ovo će biti dobra noc predosjecaaaaaaaaaaan. Tvoje " \
+                                    "stran, kjer pise 'book' za tisto dejavnost, na katero " \
+                                    "se hoces prjavt. Mas 3 minute casa"
+    YouFuckedUp = "Pizda si glup, dj ti se enkrat odprem. Mas 3 minute."
+    Goodnight = "Nc, toj to care, mam to, ti pa pejt spat, lahko noc"
+    TMinusHoursNote = "Evo tok ur je se do 6 zjutri: "
+    CheckingTMinusHours = "Se tok ur do sestih zjutri: "
+    CheckingTMinusMinutes = "Se tok minut do sestih zjutri: "
+    ItsBoring = "Pizda dougcas mi je"
+    Severina = "Dj da eno zasviram, Ovo ce biti dobra noc predosjecaaaaaaaaaaan. Tvoje " \
                "su oci boje ranog proljecaaa. Nocni klub i svi smo tu na noge svi sad " \
-               "nek trese se grad ti gledas meee ja topim see ajde pridi mi ja brojim do tri \n" \
+               "nek trese se grad ti gledas meee ja topim see ajde pridi mi ja brojim do tri " \
                " kaj dobr pjevam ne se jebat"
 
-    Last15Minutes = "Okej momak še 15 min"
+    Last15Minutes = "Okej momak se 15 min"
 
     Last5Minutes = "T minus 5 minutes"
-    RecheckingTimeAndInternet = "Okej zdej bom preveru kok ti čs zaostaja plus če ti " \
+    RecheckingTimeAndInternet = "Okej zdej bom preveru kok ti cs zaostaja plus ce ti " \
                                 "dela internet"
-    NotALotLeft = "Mam to mn kt minuta še: "
+    NotALotLeft = "Mam to mn kt minuta se: "
     Seconds = " sekund"
 
     AightBoysThisIsIt = "Aight boys this is it"
@@ -38,20 +38,20 @@ class Strings:
     TryingToFindBookButton = "Okej probavam se registrirat"
 
     ReservationConfirmed = "Toooooo momakkkk ratal mi je"
-    Enjoy = "Ajde care uživi dons"
+    Enjoy = "Ajde care uzivi dons"
     Goodmorning = "Js grem spat se ga"
     FuckIFailed = "Pizda, zajebu sm neki ne dela prou"
-    Retrying = "Probam še enkrat"
-    IGiveUp = "U pički matrni ne dela, nimam več idej kaj probat, sori care, " \
-              "nasledn tedn še enkrat probava"
+    Retrying = "Probam se enkrat"
+    IGiveUp = "U picki matrni ne dela, nimam vec idej kaj probat, sori care, " \
+              "nasledn tedn se enkrat probava"
 
 
-    CheckingTimeDifferenceLabel = "Probam dobit čs iz serverja, da preverm če je tvoj " \
-                                  "čs na kompu točn"
+    CheckingTimeDifferenceLabel = "Probam dobit cs iz serverja, da preverm ce je tvoj " \
+                                  "cs na kompu tocn"
 
-    TimeDifferenceLabel = "Tok je razlika med tvojim časom na kompu pa točnim časom: "
+    TimeDifferenceLabel = "Tok je razlika med tvojim casom na kompu pa tocnim casom: "
 
-    CantSyncTimesPossibleProblemWithInternet = "Ne morm dobit točnega časa iz neta. " \
-                                               "A maš internetno povezavo?"
+    CantSyncTimesPossibleProblemWithInternet = "Ne morm dobit tocnega casa iz neta. " \
+                                               "A mas internetno povezavo?"
 
 
